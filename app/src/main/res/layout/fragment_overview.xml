@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/overviewTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:background="@color/green"
+        android:elevation="10dp"
+        android:fontFamily="@font/robotoslab_bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="COVID-19 Overview"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ScrollView
+        android:id="@+id/overviewTextCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow">
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:paddingTop="80dp"
+            android:paddingBottom="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="80dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:clickable="true"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintRight_toLeftOf="@id/overviewSymptomsCon"-->
+<!--                    android:id="@+id/overviewHistoryCon"-->
+<!--                    android:background="@drawable/ripple_rounded_green"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:paddingRight="5dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="History"-->
+<!--                        android:fontFamily="@font/robotoslab_bold"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:clickable="true"-->
+<!--                    app:layout_constraintLeft_toRightOf="@id/overviewHistoryCon"-->
+<!--                    app:layout_constraintRight_toLeftOf="@id/overviewPreventionCon"-->
+<!--                    android:id="@+id/overviewSymptomsCon"-->
+<!--                    android:background="@drawable/ripple_rounded_green"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:paddingRight="5dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Symptoms"-->
+<!--                        android:fontFamily="@font/robotoslab_bold"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:clickable="true"-->
+<!--                    app:layout_constraintLeft_toRightOf="@id/overviewSymptomsCon"-->
+<!--                    app:layout_constraintRight_toLeftOf="@id/overviewTreatmentCon"-->
+<!--                    android:id="@+id/overviewPreventionCon"-->
+<!--                    android:background="@drawable/ripple_rounded_green"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:paddingRight="5dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Prevention"-->
+<!--                        android:fontFamily="@font/robotoslab_bold"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:clickable="true"-->
+<!--                    app:layout_constraintLeft_toRightOf="@id/overviewPreventionCon"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    android:id="@+id/overviewTreatmentCon"-->
+<!--                    android:background="@drawable/ripple_rounded_green"-->
+<!--                    android:paddingLeft="5dp"-->
+<!--                    android:paddingRight="5dp"-->
+<!--                    android:paddingBottom="10dp"-->
+<!--                    android:paddingTop="10dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Treatment"-->
+<!--                        android:fontFamily="@font/robotoslab_bold"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="13dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ripple_rounded_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/overviewHistoryCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:text="History"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:id="@+id/historyIV"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/right_arrow"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/overviewHistoryContent"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:justificationMode="inter_word"
+                    android:text="Last December 2019, Wuhan China experienced an outbreak of a
+novel coronavirus that killed more than 180,000 people and 75,000
+were infected within the first 50 days of the pandemic. Chinese
+researchers said that the novel virus was named the 2019 novel
+coronavirus (2019 -nCoV). Later on, it was discovered and identified
+as a SARS-CoV-2 and named COVID-19 by the International
+Committee on Taxonomy of Viruses. COVID-19 infects the person's
+respiratory system, specifically the upper respiratory tract or lower
+respiratory tract. Infections are ranging from mildly to deadly."
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ripple_rounded_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/overviewSymptomsCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:text="Symptoms"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:id="@+id/symptomsIV"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/right_arrow"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/overviewSymptomsContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:justificationMode="inter_word"
+                    android:text="COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.\n\n
+Most Common Symptoms:\n    • Fever\n    • Dry Cough\n    • Tiredness\n\n
+Less Common Symptoms:\n    • Aches\n    • Sore Throat\n    • Diarrhea\n    • Headache\n    • Lost of taste and smell\n\n
+Serious Symptoms:\n    • Difficulty in breathing\n    • Chest Pain\n    • Loss of speech\n\nSeek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+People with mild symptoms who are otherwise healthy should manage their symptoms at home.
+On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
+"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ripple_rounded_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/overviewPreventionCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:text="Prevention"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:id="@+id/preventionIV"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/right_arrow"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/overviewPreventionContent"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:justificationMode="inter_word"
+                    android:text="@string/prevention"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ripple_rounded_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/overviewTreatmentCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:text="Treatment"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:id="@+id/treatmentIV"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="1"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/right_arrow"
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/overviewTreatmentContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:justificationMode="inter_word"
+                    android:text="@string/treatments"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

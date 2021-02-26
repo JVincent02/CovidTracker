@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green">
+<ImageView
+    android:id="@+id/splashIcon"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:src="@drawable/radar"
+    app:layout_constraintVertical_bias="0.4"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/splashTxt"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/splashTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="COVID-19 Tracker"
+        android:textSize="30dp"
+        android:fontFamily="@font/robotoslab_regular"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/splashIcon"
+        app:layout_constraintBottom_toTopOf="@+id/splashFbCon"
+        />
+<!--    <LinearLayout-->
+<!--        android:clickable="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/splashTxt"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:id="@+id/splashFbCon"-->
+<!--        android:background="@drawable/ripple_fb"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <ImageView-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/facebook"-->
+<!--        android:layout_margin="10dp"-->
+<!--        />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Continue with Facebook"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="15dp"-->
+<!--            android:paddingRight="15dp"-->
+<!--            android:fontFamily="@font/robotoslab_bold"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/splashFbCon"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/splashTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

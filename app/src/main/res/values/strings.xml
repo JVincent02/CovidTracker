@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">COVID-19 Tracker</string>
+    <string name="api_key">AIzaSyC6XE6cCfiyyoTT4N5Cn5JIjR2gn9kLY5M</string>
+    <string name="facebook_app_id">705153530155870</string>
+    <string name="fb_login_protocol_scheme">fb705153530155870</string>
+    <string name="test">test</string>
+    <string name="history">Last December 2019, Wuhan China experienced an outbreak of a
+novel coronavirus that killed more than 180,000 people and 75,000
+were infected within the first 50 days of the pandemic. Chinese
+researchers said that the novel virus was named the 2019 novel
+coronavirus (2019 -nCoV). Later on, it was discovered and identified
+as a SARS-CoV-2 and named COVID-19 by the International
+Committee on Taxonomy of Viruses. COVID-19 infects the persons
+respiratory system, specifically the upper respiratory tract or lower
+respiratory tract. Infections are ranging from mildly to deadly.</string>
+<string name="prevention">1&#xA0;&#xA0;&#xA0;&#xA0;<b>STAY</b>&#xA0;&#xA0;&#xA0;&#xA0;home as much as you can
+\n2&#xA0;&#xA0;&#xA0;&#xA0;<b>KEEP</b>&#xA0;&#xA0;&#xA0;&#xA0;a safe distance
+\n3&#xA0;&#xA0;&#xA0;&#xA0;<b>WASH</b>&#xA0;&#xA0;&#xA0;&#xA0;hands often
+\n4&#xA0;&#xA0;&#xA0;&#xA0;<b>COVER</b>&#xA0;&#xA0;&#xA0;&#xA0;your cough
+\n5&#xA0;&#xA0;&#xA0;&#xA0;<b>SICK?</b>&#xA0;&#xA0;&#xA0;&#xA0;call ahead
+</string>
+    <string name="treatments"><b>Self care</b>
+\n\nIf you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
+\n\nEveryone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible.
+\n\nIt is normal to feel sad, stressed, or confused during a crisis. Talking to people you trust, such as friends and family, can help. If you feel overwhelmed, talk to a health worker or counsellor.
+\n\n<b>Medical Treatments</b>
+\n\nIf you have mild symptoms and are otherwise healthy, self-isolate and contact your medical provider or a COVID-19 information line for advice.
+\n\nSeek medical care if you have a fever, cough, and difficulty breathing. Call in advance.
+        \n\n\n<i>Source: World Health Organization</i>
+    </string>
+    <string name="help">1. Tap the location tab and it will display your location through satellite view.
+        \n2. Tap the search button if you want to know where will be your destination.
+        \n3. If you are now in your destination, it will automatically detect people in their quarantine facility who are near you.
+        \n4. The application will alarm and notify you if you are getting close to a quarantine facility.
+        \n5. There are three alerts in total that will appear on your screen everytime you get closer. Each alert has a different distance (in meter), Alert One (1) will appear when you are within 9 meter radius to a quarantine facility. The next alert or Alert Two (2) are within 6 meter and the last alert are once you reach the 3 meter radius.
+6. All alerts will only beep or alarm you in those threshold (9m, 6m, and 3m) but the interval in between will only show in count down.
+
+        \n\nNote: If you are not using the application, then you can be still notified if you are getting nearer into a quarantine facility but you need to open the application first with an internet access in order to load the data/information of the places with COVID-19.
+    </string>
+    <string name="other">1. In order to use the mobile application, you need first
+   to sign up or connect with your Facebook account.
+        \n2. Other options below such as COVID-19 overview,
+   statistics, and manage account can be accessible to
+   anyone.
+        \n3.You can search in the search bar for your destination.
+    </string>
+</resources>
